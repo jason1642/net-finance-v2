@@ -39,8 +39,8 @@ const ModularInfoSection: React.FunctionComponent<IModularInfoSectionProps> = (p
     <div className="full flex flex-col items-center mb-4">
         {/* Header wrapper */}
         <div className="mb-5">
-            <p className="text-5xl font-medium text-center text-white max-w-5xl w-full mt-20">Built for investors</p>
-            <p className="text-5xl font-medium text-center text-white max-w-5xl w-full ">Designed for performance</p>
+            <p className="text-7xl font-medium text-center text-white max-w-5xl w-full mt-20">Built for investors</p>
+            <p className="text-7xl font-medium text-center text-white max-w-5xl w-full ">Designed for performance</p>
 
         </div>
 
@@ -48,10 +48,10 @@ const ModularInfoSection: React.FunctionComponent<IModularInfoSectionProps> = (p
         <div className="flex flex-row gap-5">
             {
                 listContent.map((item, index) =>
-                <div key={index} className="flex flex-col p-7 w-[30%] bg-surface rounded-xl">
+                <div key={index} className="flex flex-col p-8 w-[30%] bg-surface rounded-xl">
                     {item.icon}
-                    <p className="mt-3 font-bold">{item.title}</p>
-                    <p>{item.description}</p>
+                    <p className="mt-3 font-bold text-xl">{item.title}</p>
+                    <p className="text-xl leading-[120%]">{item.description}</p>
                 </div>
                 )
             }
