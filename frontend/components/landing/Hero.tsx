@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Button from '../button/Button';
 import Image from 'next/image'
+import SecondSection from '@/app/SecondSection';
 
 interface IHeroProps {
 }
@@ -32,6 +33,9 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
         fill
         />
     </div>
+
+
+    <SecondSection />
 
     </div>
   );
