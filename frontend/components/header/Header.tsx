@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Link from 'next/link';
 
 interface IHeaderProps {
 }
@@ -7,7 +8,7 @@ const Header: React.FunctionComponent<IHeaderProps> = (props) => {
   return (
   <header className="bg-dark-background flex w-full max-w-full min-w-md mx-auto items-center justify-between py-4 px-8">
     <div className="text-brand-400">
-        <h1 className="text-2xl font-normal text-white">Net Finance</h1>
+     <Link href="/">   <h1 className="text-2xl font-normal text-white">Net Finance</h1></Link>
     </div>
     <nav>
         <ul className="flex space-x-4">

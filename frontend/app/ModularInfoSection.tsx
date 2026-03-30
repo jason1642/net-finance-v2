@@ -36,9 +36,9 @@ const listContent = [
 
 const ModularInfoSection: React.FunctionComponent<IModularInfoSectionProps> = (props) => {
   return (
-    <div className="full flex flex-col items-center mb-4">
+    <div className="w-[80%] mx-auto flex flex-col items-center mb-5">
         {/* Header wrapper */}
-        <div className="mb-5">
+        <div className="mb-6">
             <p className="text-7xl font-medium text-center text-white max-w-5xl w-full mt-20">Built for investors</p>
             <p className="text-7xl font-medium text-center text-white max-w-5xl w-full ">Designed for performance</p>
 
