@@ -1,8 +1,9 @@
 "use client"
+import { useEffect } from "react"
 import { useForm, SubmitHandler } from "react-hook-form"
 import { Description, Field, Input, Label } from '@headlessui/react'
 import Button from "@/components/button/Button"
-
+import registerValidations from './validations'
 
 
 interface IFormInput {
@@ -40,8 +41,15 @@ const formFields: {
 ]
 
 export default function Page() {
-    const { register, handleSubmit } = useForm<IFormInput>()
+    const { register, handleSubmit, formState:{ 
+        errors
+    }} = useForm<IFormInput>()
     const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+
+    // useEffect(()=>{
+
+    //     console.log(getValues())
+    // },[])
     return (
         <div className="bg-surface flex flex-row min-h-80vh  w-5xl max-w-full mx-auto mt-20 rounded-lg">
             <div className="w-[35%] bg-brand-400">
@@ -61,7 +69,8 @@ export default function Page() {
                 <Input 
                     className="mt-3 block w-full rounded-lg border-none bg-white/5 px-3 py-1.5 text-sm/6 text-white
             focus:not-data-focus:outline-none data-focus:outline-2 data-focus:-outline-offset-2 data-focus:outline-white/25"
-                 {...register(field.id)} />
+                 {...register(field.id, registerValidations[field.id])} />
+                 {errors[field.id] && <Description className="text-red-500">{errors[field.id]?.message}</Description>}
                 </Field>
                 ))}
                 
