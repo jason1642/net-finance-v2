@@ -20,7 +20,7 @@ const registerValidations = {
     },
     confirm_password: {
         required: true,
-        validate: (value: string, getValues: any) => value === getValues("password") || "Passwords do not match"
+        // validate: (value: string, getValues: any) => value === getValues("password") || "Passwords do not match"
     }
 }
 

@@ -1,5 +1,5 @@
 "use client"
-import { useEffect } from "react"
+import { useEffect } from "react"   
 import { useForm, SubmitHandler } from "react-hook-form"
 import { Description, Field, Input, Label } from '@headlessui/react'
 import Button from "@/components/button/Button"
@@ -65,7 +65,6 @@ const formFields: {
         id: "confirm_password",
         validations: {
                 required: true,
-        validate: (value, getValues) => value === getValues("password") || "Passwords do not match"
         }
     }
 ]
@@ -74,7 +73,16 @@ export default function Page() {
     const { register, handleSubmit, getValues, watch, formState:{ 
         errors
     }} = useForm<IFormInput>()
-    const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+    const onSubmit: SubmitHandler<IFormInput> = (data) => {
+        console.log(data)
+        try {
+            // Make API call to register user
+             
+        } catch(error){
+            console.log(error)
+        }
+        return
+    };
     // const passwordWatch = watch("password")
     // useEffect(()=>{
 
