@@ -24,6 +24,7 @@ obj/
 # next.js
 frontend/.next/
 frontend/.next/dev/
+frontend/.next/*
 
 frontend/out/
 
