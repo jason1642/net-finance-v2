@@ -2,9 +2,10 @@ import * as React from 'react';
 import Link from 'next/link';
 
 interface IHeaderProps {
+    
 }
 
-const Header: React.FunctionComponent<IHeaderProps> = (props) => {
+const Header: React.FunctionComponent<IHeaderProps> = () => {
   return (
   <header className="bg-dark-background flex w-full max-w-full min-w-md mx-auto items-center justify-between py-4 px-8">
     <div className="text-brand-400">

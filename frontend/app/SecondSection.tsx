@@ -3,6 +3,7 @@ import Image from 'next/image';
 import * as React from 'react';
 
 interface ISecondSectionProps {
+    props: null
 }
 
 const listContent = [
@@ -26,7 +27,7 @@ const listContent = [
 
 const SecondSection: React.FunctionComponent<ISecondSectionProps> = (props) => {
   return (
-    <div className="flex flex-col p-12 w-full m-auto mt-8 max-w-7xl min-h-[300px] bg-grey">
+    <div className="flex flex-col p-12 w-full m-auto mt-8 max-w-7xl min-h-75 bg-grey">
       {/* Header */}
     <div className="flex text-4xl text-center w-[60%] font-semibold mx-auto p-4 pb-0">
         Everything you need to invest smarter, faster, and with confidence

@@ -31,12 +31,14 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-     <Provider store={store}>
+     
         <body className="bg-dark-background min-h-full min-w-7xl flex flex-col">
+          <Provider store={store}>
           <Header />
           {children}
+            </Provider>
           </body>  
-          </Provider>
+        
     </html>
   );
 }
