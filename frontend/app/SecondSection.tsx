@@ -3,7 +3,7 @@ import Image from 'next/image';
 import * as React from 'react';
 
 interface ISecondSectionProps {
-    props: null
+    
 }
 
 const listContent = [

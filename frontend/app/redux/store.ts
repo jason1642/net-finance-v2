@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit'
 
-export const makeStore = () => {
+export default function makeStore() {
   return configureStore({
     reducer: {}
   })

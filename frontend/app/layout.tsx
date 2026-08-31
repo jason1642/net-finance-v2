@@ -33,10 +33,10 @@ export default function RootLayout({
     >
      
         <body className="bg-dark-background min-h-full min-w-7xl flex flex-col">
-          <Provider store={store}>
+          {/* <Provider store={store}> */}
           <Header />
           {children}
-            </Provider>
+            {/* </Provider> */}
           </body>  
         
     </html>

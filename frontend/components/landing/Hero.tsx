@@ -3,6 +3,7 @@ import Button from '../button/Button';
 import Image from 'next/image'
 import SecondSection from '@/app/SecondSection';
 import ModularInfoSection from '@/app/ModularInfoSection';
+import ImageTextCard from '@/app/ImageTextCard';
 
 interface IHeroProps {
 }
@@ -39,6 +40,8 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
     <SecondSection />
 
     <ModularInfoSection />
+
+    <ImageTextCard />
 
     </div>
   );
