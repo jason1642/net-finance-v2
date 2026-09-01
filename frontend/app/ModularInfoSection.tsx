@@ -1,10 +1,9 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import * as React from 'react';
 
 interface IModularInfoSectionProps {
    
 }
-
 
 const listContent = [
     {
@@ -46,7 +45,7 @@ const ModularInfoSection: React.FunctionComponent<IModularInfoSectionProps> = (p
         </div>
  
         {/* Modular section */}
-        <div className="flex flex-row gap-5">
+        <div className="flex flex-row gap-5 justify-center">
             {
                 listContent.map((item, index) =>
                 <div key={index} className="flex flex-col p-6 w-[30%] bg-surface rounded-xl">

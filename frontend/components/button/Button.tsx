@@ -7,7 +7,7 @@ interface IButtonProps {
 
 const Button: React.FunctionComponent<IButtonProps> = ({text, customOptions}) => {
   return (
-    <button className={`bg-brand-400 text-sm text-black p-4 rounded-lg ${customOptions}`}>
+    <button className={`${customOptions} bg-brand-400 text-sm text-black p-4 rounded-lg `}>
         {text}
     </button>
   );

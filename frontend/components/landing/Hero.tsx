@@ -4,6 +4,7 @@ import Image from 'next/image'
 import SecondSection from '@/app/SecondSection';
 import ModularInfoSection from '@/app/ModularInfoSection';
 import ImageTextCard from '@/app/ImageTextCard';
+import Footer from '@/app/Footer';
 
 interface IHeroProps {
 }
@@ -42,6 +43,8 @@ const Hero: React.FunctionComponent<IHeroProps> = (props) => {
     <ModularInfoSection />
 
     <ImageTextCard />
+
+    <Footer />
 
     </div>
   );
